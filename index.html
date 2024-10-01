@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Alapatt</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/alappatt-demo.png" type="image/x-icon">
+    <link rel="icon" href="images/alappatt-demo.png" type="image/x-icon">
+     <style>
+
+           .button-like-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffd40c;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-like-link:hover {
+            color:black;
+            background-color: #ffd40c;
+        }
+
+
+
+        h1 {
+          text-transform: uppercase;
+          font-size: 2.3rem;
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+            1px 1px 0 #000;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+
+          @media screen and (max-width: 600px) {
+            font-size: 1.8rem;
+            max-width: 300px;
+          }
+
+
+        }.clock-container {
+          border-radius: 5px;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4), 0 15px 90px 30px rgba(0, 0, 0, 0.4);
+          width: 80%; /* Adjust the width as desired */
+          max-width: 400px; /* Adjust max-width as desired */
+          display: flex;
+          flex-direction: row; /* Change to column for vertical layout */
+          align-items: center; /* Center-align the columns */
+        }
+
+        .clock-col {
+          width: 100%; /* Ensure each column takes the full width */
+          text-align: center;
+          border: 2px solid #1a2026;
+          background: #ffd40c;
+          background: linear-gradient(
+            180deg,
+            #ffd40c,
+            #ffd40c
+          );
+          padding: 20px; /* Add padding for spacing */
+          margin-bottom: 10px; /* Add margin to separate each column */
+        }
+
+        .clock-timer {
+          font-size: 3.6rem;
+          padding: 20px 0;
+          box-shadow: 0 -5px 5px -5px #333;
+        }
+
+        .clock-label {
+          text-transform: uppercase;
+          font-size: 1.3rem;
+          padding: 10px 0;
+          margin: 0;
+          background: #ffd40c;
+          background: linear-gradient(
+            180deg,
+            #ffd40c,
+            #ffd40c
+          );
+          border-top: 1px solid #013e5b;
+        }
+
+        .label-days {
+          background: #e91e63;
+          background: linear-gradient(
+            0deg,
+            rgba(201, 28, 87, 1) 0%,
+            rgba(158, 24, 69, 1) 100%
+          );
+          border-top: 1px solid #a31847;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- home
+    ================================================== -->
+    <main class="s-home s-home--static">
+        <div class="home-slider">
+            <div class="home-slider-img" style="background-image: url(images/slides/alapatt1.jpg);"></div>
+            <div class="home-slider-img" style="background-image: url(images/slides/alapatt-7.png);"></div>
+            <div class="home-slider-img" style="background-image: url(images/slides/1553610714_3.jpg);"></div>
+        </div>
+
+
+        <div class="overlay"></div>
+
+        <div class="home-content">
+
+            <div class="home-logo">
+                <a href="index-static.html">
+                     <img src="images/alappatt-demo.png" alt="Homepage" style="width:250px;height:100px;">
+                </a>
+            </div>
+
+            <div class="row home-content__main">
+
+                <div class="col-eight home-content__text pull-right">
+                    <h3>Welcome To Alapatt Fashion Jewellery</h3>
+
+                    <h1>
+                   <br>Website Under Construction.<br> Coming Soon!!!
+                    </h1>
+
+
+                    <div class="home-content__subscribe">
+                        <form id="mc-form" class="group" novalidate="true">
+                           <h4 style="color:white;">SWARNA SAYOOJYA</h4>
+                            <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=112283" target="_blank" class="button-like-link" >Pay Now</a>
+
+                        </form>
+                    </div>
+                    <div class="home-content__subscribe">
+                        <form id="mc-form" class="group" novalidate="true">
+                           <h4 style="color:white;">KANAKA SOUBHAGYA</h4>
+                             <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=112283" target="_blank" class="button-like-link" >Pay Now</a>
+                        </form>
+                    </div>
+                </div> <br><br> <!-- end home-content__text -->
+
+
+
+
+                <h1 style="font-size:3rem">Launching In</h1>
+                <div class="clock-container">
+                  <div class="clock-col">
+                    <div class="clock-days clock-timer" style="color:black;">&nbsp;</div>
+                    <div class="clock-label label-days" style="color:white;">
+                      Days
+                    </div>
+                  </div>
+                  <div class="clock-col">
+                    <div class="clock-hours clock-timer" style="color:black;">&nbsp;</div>
+                    <div class="clock-label label-hour" style="color:black; ">
+                      Hours
+                    </div>
+                  </div>
+                  <div class="clock-col">
+                    <div class="clock-minutes clock-timer" style="color:black;">&nbsp;</div>
+                    <div class="clock-label label-minutes" style="color:black;">
+                      Minutes
+                    </div>
+                  </div>
+                  <div class="clock-col">
+                    <div class="clock-seconds clock-timer" style="color:black;">&nbsp;</div>
+                    <div class="clock-label label-seconds" style="color:black;">
+                      Seconds
+                    </div>
+                  </div>
+                </div>
+
+
+
+            <ul class="home-social">
+                <li>
+                            <a href="https://www.facebook.com/alapattfashionjewellerytvm/"><i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span>Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=zwK2hdMSwXw"><i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span>YouTube</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/alapattfashionjewellery/"><i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span>Instagram</span></a>
+                        </li>
+            </ul> <!-- end home-social -->
+
+<!--            <div class="row home-copyright">-->
+<!--                <span>Copyright Alapatt Fashion Jewellery 2024</span>-->
+<!--                <span>Design by <a href="tinos.co.in">Tinos Software and Security Solutions LLP</a></span>-->
+<!--            </div>-->
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+    </main> <!-- end s-home -->
+
+    <!-- info
+    ================================================== -->
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+ <script>
+   //Related gist & discussion https://gist.github.com/jakearchibald/cb03f15670817001b1157e62a076fe95
+// Related video https://www.youtube.com/watch?v=MCi6AZMkxcU
+
+window.onload = function () {
+  const controller = new AbortController();
+  // Set the date we're counting down to
+  const countDownDate = new Date("Jun 15, 2024 00:00:00").getTime();
+  const clockDaysElement = document.querySelector(".clock-days");
+  const clockHoursElement = document.querySelector(".clock-hours");
+  const clockMinutesElement = document.querySelector(".clock-minutes");
+  const clockSecondsElement = document.querySelector(".clock-seconds");
+  // Create an animation callback every second:
+  animationInterval(1000, controller.signal, (time) => {
+    // Get today's date and time
+    let now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    let distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the results
+    clockDaysElement.textContent = days;
+    clockHoursElement.textContent = hours;
+    clockMinutesElement.textContent = minutes;
+    clockSecondsElement.textContent = seconds;
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      controller.abort();
+      document.querySelector(".clock-container").innerHTML = "EXPIRED";
+    }
+  });
+};
+
+function animationInterval(ms, signal, callback) {
+  // Prefer currentTime, as it'll better sync animtions queued in the
+  // same frame, but if it isn't supported, performance.now() is fine.
+  const start = document.timeline
+    ? document.timeline.currentTime
+    : performance.now();
+
+  function frame(time) {
+    if (signal.aborted) return;
+    callback(time);
+    scheduleFrame(time);
+  }
+
+  function scheduleFrame(time) {
+    const elapsed = time - start;
+    const roundedElapsed = Math.round(elapsed / ms) * ms;
+    const targetNext = start + roundedElapsed + ms;
+    const delay = targetNext - performance.now();
+    setTimeout(() => requestAnimationFrame(frame), delay);
+  }
+
+  scheduleFrame(start);
+}
+
+    </script>
+</body>
+
+
+</html>
